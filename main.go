@@ -4,16 +4,13 @@ import (
 	"fmt"
 )
 
-func add(x string, y string) (string, string) {
-	return y, x
+func split(sum int) (x, y int) {
+	x = sum * 4 / 9
+	y = sum - x
+	return
 }
 
 func main() {
-
-	fmt.Println(add("Hello", "World"))
-
-}
-
-func sayHello() {
-	fmt.Println("Hello")
+	a, b := split(17)
+	fmt.Println(a, b)
 }
