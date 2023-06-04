@@ -6,7 +6,5 @@ import (
 
 func main() {
 	a := 42
-	fmt.Println(a)
-	b, c, d, _, f := 0, 1, 2, 3, 4
-	fmt.Println(b, c, d, f)
+	fmt.Printf("Value : %d\t Binary Value: %b\t Hexadecimal: %#x\n", a, a, a)
 }
