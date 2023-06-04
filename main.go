@@ -4,14 +4,14 @@ import (
 	"fmt"
 )
 
-func add(x int, y int) int {
-	return x + y
+func add(x string, y string) (string, string) {
+	return y, x
 }
 
 func main() {
 
-	fmt.Println(add(42, 13))
-	sayHello()
+	fmt.Println(add("Hello", "World"))
+
 }
 
 func sayHello() {
